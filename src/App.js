@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react'
-import { Header, MainContainer, CreateContainer } from './components'
+import { Header, MainContainer, CreateContainer, Payment, CustomerInf } from './components'
 import { Routes } from 'react-router-dom'
 import { Route } from 'react-router-dom'
 import { AnimatePresence } from 'framer-motion'
@@ -32,6 +32,7 @@ const App = () => {
             <Routes>
               <Route path="/*" element={<MainContainer/>} />
               <Route path="/createItem" element={<CreateContainer/>}/>
+              <Route path="/payment" element={<Payment/>}/>
             </Routes>
         </main>
     </div>

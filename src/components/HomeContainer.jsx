@@ -10,7 +10,7 @@ const HomeContainer = () => {
             <div className="py-2 flex-1 flex flex-col items-start justify-center gap-6">
                 <div className="flex items-center gap-2 justify-center bg-orange-100 px-4 py-1 rounded-full">
                     <p className="text-base text-orange-500 font-semibold">
-                         Quickly Delivery
+                        Quickly Delivery
                     </p>
                     <div className="w-8 h-8 bg-white rounded-full overflow-hidden drop-shadow-xl">
                         <img
@@ -29,10 +29,7 @@ const HomeContainer = () => {
                 </p>
 
                 <p className="text-base text-textColor text-center md:text-left md:w-[80%]">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima velit
-                    eaque fugit distinctio est nam voluptatum architecto, porro iusto
-                    deserunt recusandae ipsa minus eos sunt, dolores illo repellat facere
-                    suscipit!
+                    Our classic collection of Valentine's Day desserts is back, featuring best-sellers like our Date Night Sampler and small batch Chocolate Covered Brownie Bites. Ship nationwide or order for in-store pickup!
                 </p>
 
                 <button

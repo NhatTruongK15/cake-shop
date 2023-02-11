@@ -9,3 +9,4 @@ export { default as CartContainer } from "./CartContainer";
 export { default as CartItem } from "./CartItem";
 export {default as Payment} from "./Payment";
 export {default as CustomerInf} from "./CustomerInf";
+export {default as About} from "./Aboutus";

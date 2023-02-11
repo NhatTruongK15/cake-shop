@@ -10,6 +10,7 @@ import Avatar from "../img/avatar.png";
 import { Link } from "react-router-dom";
 import { useStateValue } from "../context/stateProvider";
 import { actionType } from "../context/reducer";
+import MenuContainer from "./MenuContainer";
 
 const Header = () => {
   const firebaseAuth = getAuth(app);
@@ -68,14 +69,22 @@ const Header = () => {
             className="flex items-center gap-24 "
           >
             <li className="text-lg text-textColor hover:text-headingColor duration-100 transition-all ease-in-out cursor-pointer">
-              Home
+              <a href="#">
+                Home
+              </a>
             </li>
-            <li className="text-lg text-textColor hover:text-headingColor duration-100 transition-all ease-in-out cursor-pointer">
-              Menu
-            </li>
+            <Link to="/menu">
+              <li className="text-lg text-textColor hover:text-headingColor duration-100 transition-all ease-in-out cursor-pointer">
+                Menu
+              </li>
+
+            </Link>
+
+            <Link to="/about">
             <li className="text-lg text-textColor hover:text-headingColor duration-100 transition-all ease-in-out cursor-pointer">
               About Us
             </li>
+            </Link>
             <li className="text-lg text-textColor hover:text-headingColor duration-100 transition-all ease-in-out cursor-pointer">
               Service
             </li>
@@ -178,9 +187,9 @@ const Header = () => {
               )}
 
               <ul className="flex flex-col ">
-                <li 
+                <li
                   className="text-base text-textColor hover:text-headingColor duration-100 transition-all ease-in-out cursor-pointer hover:bg-slate-100 px-4 py-2"
-                  onClick={() => setIsMenu(false)} 
+                  onClick={() => setIsMenu(false)}
                 >
                   Home
                 </li>

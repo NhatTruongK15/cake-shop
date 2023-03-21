@@ -7,7 +7,9 @@ import {
   MdDelete,
   MdFoodBank,
   MdAttachMoney,
+  MdCategory,
 } from "react-icons/md";
+import { MdOutline12Mp } from "react-icons/md";
 import { categories } from "../utils/data";
 import Loader from "./Loader";
 import {
@@ -135,7 +137,7 @@ const CreateContainer = () => {
     setImageAsset(null);
     setCalories("");
     setPrice("");
-    setCategory("Select Category");
+    setCategory("Chọn loại hàng hóa");
   };
 
   const fetchData = async () => {
@@ -165,13 +167,13 @@ const CreateContainer = () => {
         )}
 
         <div className="w-full py-2 border-b border-gray-300 flex items-center gap-2">
-          <MdFastfood className="text-xl text-gray-700" />
+          <MdCategory className="text-xl text-gray-700" />
           <input
             type="text"
             required
             value={title}
             onChange={(e) => setTitle(e.target.value)}
-            placeholder="Give me a title..."
+            placeholder="Nhập tên mặt hàng"
             className="w-full h-full text-lg bg-transparent outline-none border-none placeholder:text-gray-400 text-textColor"
           />
         </div>
@@ -182,7 +184,7 @@ const CreateContainer = () => {
             className="outline-none w-full text-base border-b-2 border-gray-200 p-2 rounded-md cursor-pointer"
           >
             <option value="other" className="bg-white">
-              Select Category
+              Chọn loại mặt hàng.
             </option>
             {categories &&
               categories.map((item) => (
@@ -244,25 +246,25 @@ const CreateContainer = () => {
 
         <div className="w-full flex flex-col md:flex-row items-center gap-3">
           <div className="w-full py-2 border-b border-gray-300 flex items-center gap-2">
-            <MdFoodBank className="text-gray-700 text-2xl" />
+            <MdOutline12Mp className="text-gray-700 text-2xl" />
             <input
               type="text"
               required
               value={calories}
               onChange={(e) => setCalories(e.target.value)}
-              placeholder="Calories"
+              placeholder="Kilorgram"
               className="w-full h-full text-lg bg-transparent outline-none border-none placeholder:text-gray-400 text-textColor"
             />
           </div>
 
           <div className="w-full py-2 border-b border-gray-300 flex items-center gap-2">
-            <MdAttachMoney className="text-gray-700 text-2xl" />
+            <MdOutline12Mp className="text-gray-700 text-2xl" />
             <input
               type="text"
               required
               value={price}
               onChange={(e) => setPrice(e.target.value)}
-              placeholder="Price"
+              placeholder="Giá tiền"
               className="w-full h-full text-lg bg-transparent outline-none border-none placeholder:text-gray-400 text-textColor"
             />
           </div>

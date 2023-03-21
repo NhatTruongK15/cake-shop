@@ -1,7 +1,7 @@
 import React from 'react'
 import Delivery from "../img/delivery.png"
 import HeroBg from "../img/heroBg.png"
-import { heroData } from '../utils/data'
+// import { heroData } from '../utils/data'
 
 const HomeContainer = () => {
     return (
@@ -10,7 +10,7 @@ const HomeContainer = () => {
             <div className="py-2 flex-1 flex flex-col items-start justify-center gap-6">
                 <div className="flex items-center gap-2 justify-center bg-orange-100 px-4 py-1 rounded-full">
                     <p className="text-base text-orange-500 font-semibold">
-                        Quickly Delivery
+                        Never let you disappointed
                     </p>
                     <div className="w-8 h-8 bg-white rounded-full overflow-hidden drop-shadow-xl">
                         <img
@@ -22,21 +22,22 @@ const HomeContainer = () => {
                 </div>
 
                 <p className="text-[2.5rem] lg:text-[4.5rem] font-bold tracking-wide text-headingColor">
-                    You name it,
+                Fulfill your 
                     <span className="text-orange-600 text-[3rem] lg:text-[5rem]">
-                        We carry it
+                     everything orders
                     </span>
                 </p>
 
                 <p className="text-base text-textColor text-center md:text-left md:w-[80%]">
-                    Our classic collection of Valentine's Day desserts is back, featuring best-sellers like our Date Night Sampler and small batch Chocolate Covered Brownie Bites. Ship nationwide or order for in-store pickup!
-                </p>
+                ShipTT là giải pháp hoàn thiện đơn hàng toàn cầu được hơn 7.000 thương hiệu tin cậy để vận chuyển đơn đặt hàng từ mọi nơi mà khách hàng của họ mua sắm.
+
+Từ trải nghiệm mở hộp được cá nhân hóa và đáng nhớ đến vận chuyển nhanh hơn, ShipBob cung cấp các giải pháp chuỗi cung ứng tốt nhất trong phân khúc và đáp ứng các đơn đặt hàng toàn cầu từ Mỹ, Anh, EU, Canada và Úc để đáp ứng mong đợi của khách hàng.</p>
 
                 <button
                     type="button"
                     className="bg-gradient-to-br from-orange-400 to-orange-500 w-full md:w-auto px-4 py-2  rounded-lg hover:shadow-lg transition-all ease-in-out duration-100"
                 >
-                    Order Now
+                    Khám phá ngay 
                 </button>
             </div>
             <div className="py-2 flex-1 flex items-center relative">
@@ -46,7 +47,7 @@ const HomeContainer = () => {
                     alt="hero-bg"
                 />
 
-                <div className="w-full h-full absolute top-0 left-0 flex items-center justify-center lg:px-32  py-4 gap-4 flex-wrap">
+                {/* <div className="w-full h-full absolute top-0 left-0 flex items-center justify-center lg:px-32  py-4 gap-4 flex-wrap">
                     {heroData &&
                         heroData.map((n) => (
                             <div
@@ -71,7 +72,7 @@ const HomeContainer = () => {
                                 </p>
                             </div>
                         ))}
-                </div>
+                </div> */}
             </div>
         </section>
     )

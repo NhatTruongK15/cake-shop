@@ -1,7 +1,7 @@
-import Chocolate from "../img/chocolatecake.png";
-import I1 from "../img/i1.png";
-import Celebration from "../img/CelebrationCake.png";
-import BananaCookie from "../img/BannaCookie.png"
+// import Chocolate from "../img/chocolatecake.png";
+// import I1 from "../img/i1.png";
+// import Celebration from "../img/CelebrationCake.png";
+// import BananaCookie from "../img/BannaCookie.png"
 
 
 
@@ -13,60 +13,60 @@ export const heroData = [
         name: "Icecream",
         decp: "Chocolate & vanilla",
         price: "1.25",
-        imageSrc: I1,
+        // imageSrc: I1,
     },
     {
         id: 2,
         name: "Chocolate Cake",
         decp: "Chocolate",
         price: "12.25",
-        imageSrc: Chocolate,
+        // imageSrc: Chocolate,
     },
     {
         id: 3,
         name: "Celebration Cake",
         decp: "Cake Flour",
         price: "10.5",
-        imageSrc: Celebration,
+        // imageSrc: Celebration,
     },
     {
         id: 4,
         name: "Banna Pudding Cookies",
         decp: "Banana & Vanilla Wafers",
         price: "2.25",
-        imageSrc: BananaCookie,
+        // imageSrc: BananaCookie,
     },
 ]
 
 export const categories = [
     {
         id: 1,
-        name: "Cakes",
+        name: "Quần áo",
         urlParaname: "cake",
     },
     {
         id:2,
-        name:"Cookies",
+        name:"Thực phẩm",
         urlParaname: "cookies",
     },
     {
         id:3,
-        name: "Cup cakes",
+        name: "Hàng điện tử",
         urlParaname: "cupcake",
     },
     {
         id: 4,
-        name: "Pudding",
+        name: "Hàng thiết yếu ",
         urlParaname: "pudding",
     },
     {
         id: 5,
-        name: "Icecreams",
-        urlParaname: "icecreams",   
+        name: "Mặt hàng nổi bật",
+        urlParaname: "fruits",   
     },
     {
         id: 6,
-        name: "Fruits",
-        urlParaname: "fruits",
-    }
+        name: "Mặt hàng khác",
+        urlParaname: "icecreams",   
+    },
 ];

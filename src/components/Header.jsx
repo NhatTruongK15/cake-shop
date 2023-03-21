@@ -6,6 +6,7 @@ import { getAuth, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
 import { app } from "../firebase.config";
 
 import Logo from "../img/Logo.png";
+import Logo1 from "../img/White - Brown.png";
 import Avatar from "../img/avatar.png";
 import { Link } from "react-router-dom";
 import { useStateValue } from "../context/stateProvider";
@@ -57,8 +58,8 @@ const Header = () => {
       {/* desktop & tablet */}
       <div className="hidden md:flex w-full h-full items-center justify-between">
         <Link to={"/"} className="flex items-center gap-2">
-          <img src={Logo} className="w-8 object-cover" alt="logo" />
-          <p className="text-headingColor text-xl font-bold"> Serein Cake </p>
+          <img src={Logo1} className="w-8 object-cover" alt="logo" />
+          <p className="text-headingColor text-xl font-bold"> Ship TT </p>
         </Link>
 
         <div className="flex items-center gap-8">
@@ -70,24 +71,24 @@ const Header = () => {
           >
             <li className="text-lg text-textColor hover:text-headingColor duration-100 transition-all ease-in-out cursor-pointer">
               <a href="#">
-                Home
+                Trang chủ
               </a>
             </li>
             <Link to="/menu">
               <li className="text-lg text-textColor hover:text-headingColor duration-100 transition-all ease-in-out cursor-pointer">
-                Menu
+                Mặt hàng
               </li>
 
             </Link>
-
+         
+            <li className="text-lg text-textColor hover:text-headingColor duration-100 transition-all ease-in-out cursor-pointer">
+                 Dịch vụ
+            </li> 
             <Link to="/about">
             <li className="text-lg text-textColor hover:text-headingColor duration-100 transition-all ease-in-out cursor-pointer">
-              About Us
+              More about Us
             </li>
             </Link>
-            <li className="text-lg text-textColor hover:text-headingColor duration-100 transition-all ease-in-out cursor-pointer">
-              Service
-            </li>
           </motion.ul>
 
           <div
@@ -160,7 +161,7 @@ const Header = () => {
 
         <Link to={"/"} className="flex items-center gap-2">
           <img src={Logo} className="w-8 object-cover" alt="logo" />
-          <p className="text-headingColor text-xl font-bold">Serein Cake</p>
+          <p className="text-headingColor text-xl font-bold">Ship TT</p>
         </Link>
 
         <div className="relative">
